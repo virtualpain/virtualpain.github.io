@@ -6380,28 +6380,32 @@ header h1 a {
   height: 100px;
   border-radius: 100px;
 }
+/* line 89, ../sass/app.scss */
+.profile hr.split {
+  border: 2px solid #ff6d6d;
+}
 
-/* line 93, ../sass/app.scss */
+/* line 96, ../sass/app.scss */
 .posts .post .post-meta {
   padding: 1em 0;
   font-style: italic;
   color: #bbb;
   font-size: 0.9em;
 }
-/* line 100, ../sass/app.scss */
+/* line 103, ../sass/app.scss */
 .posts .post.single-post h3 {
   font-size: 2.5em;
 }
-/* line 103, ../sass/app.scss */
+/* line 106, ../sass/app.scss */
 .posts .post.single-post .post-content {
   font-size: 1.3em;
 }
-/* line 106, ../sass/app.scss */
+/* line 109, ../sass/app.scss */
 .posts .post.single-post .post-meta {
   padding: 0 0 1em;
 }
 
-/* line 113, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 footer {
   font-family: verdana;
   color: #bbb;
