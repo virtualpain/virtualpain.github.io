@@ -1,3 +1,4 @@
-name: Catatan Virtualpain
+name: Akselerasi Pemprograman
+exclude: ["sass",'Rakefile',"config.rb"]
 pygments: true
-permalink: ":year/:title"
+permalink: ":categories/:year/:title"

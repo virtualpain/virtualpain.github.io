@@ -1,0 +1,49 @@
+@import "settings";
+
+html {
+	border-top: 16px solid #81C6DD;
+}
+body {
+	padding:0;
+	margin:0;
+	margin-bottom: 50px;
+	color:$textColor;
+	line-height: 1.8em;
+}
+h1,h2,h3 {
+	color:$headerColor;
+}
+a {
+	&,&:hover,&:visited,&:active,&:focus {
+		color:$linkColor;
+		text-decoration: none;
+	}
+	&:hover {
+		background-color: $linkColor;
+		color:white;
+	}
+}
+
+.inline-nav a {
+	background-color: $linkColor;
+	color:white;
+	padding:2px 5px;
+	text-decoration: none;
+}
+
+pre,code {
+	background-color: lightgray;
+	color:black;
+	padding:1px 4px;
+	font-size: 0.9em;
+}
+
+.text-center {
+	text-align: center;
+}
+footer, .site-title {
+	@extend .text-center;
+}
+footer {
+	font-size: 0.8em;
+}

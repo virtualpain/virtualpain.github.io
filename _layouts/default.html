@@ -1,103 +1,18 @@
-
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Virtualpain's Note</title>
-
-  
-  <link rel="stylesheet" href="/css/app.css" />
-  
-
-  <script src="/js/custom.modernizr.js"></script>
-
-</head>
-<body>
-
-  <!-- main content start -->
-  
-  <div class="row">
-    <div class="columns large-8 main-container">
-      <header>
-        <h1><a href="/">Virtualpain's Note</a></h1>
-      </header>
-
-      <div class="row">
-
-        <div class="columns large-2">
-          <div class="profile">
-            <img src="http://gravatar.com/avatar/01b1c588a074b7c85b5a5fb4539a10a1?s=100" alt="" class="profile-avatar">
-            <h4>Virtualpain</h4>
-            <p class="profile-real-name">(Alvina Putri)</p>
-            <div class="profile-description">
-              <p>
-                I like math, web dev, programming, linux, and world domination.
-              </p>
-              <p>
-                And I hate smoker!
-              </p>
-            </div>
-            <p><a href="http://twitter.com/alvinaputri">@alvinaputri</a></p>
-            <hr class="split">
-            <p><a href="/archive.html" title="Old post!">Archive</a></p>
-          </div>
-        </div>
-        <div class="columns large-6">
-          <!-- content -->
-          {{content}}
-        </div>
-
-      </div>
+<html>
+  <head>
+    <title>{{page.title}} - virtualpain</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/unsemantic-grid-responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      {{content}}
       <footer>
-        &copy; virtualpain
-        &bull;
-        last updated at {{site.time | date: "%d %b %Y"}}
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> virtualpain</p>
       </footer>
     </div>
-  </div>
-
-  <!-- main content end -->
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? '/js/zepto' : '/js/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="/js/foundation.js"></script>
-  
-  <script src="/js/foundation.forms.js"></script>
-  
-  <script src="/js/foundation.joyride.js"></script>
-  
-  <script src="/js/foundation.topbar.js"></script>
-  
-  <script src="/js/foundation.alerts.js"></script>
-  
-  <script src="/js/foundation.reveal.js"></script>
-  
-  <script src="/js/foundation.dropdown.js"></script>
-  
-  <script src="/js/foundation.orbit.js"></script>
-  
-  <script src="/js/foundation.tooltips.js"></script>
-  
-  <script src="/js/foundation.clearing.js"></script>
-  
-  <script src="/js/foundation.magellan.js"></script>
-  
-  <script src="/js/foundation.section.js"></script>
-  
-  <script src="/js/foundation.cookie.js"></script>
-  
-  <script src="/js/foundation.placeholder.js"></script>
-  
-  
-  <script>
-    $(document).foundation();
-  </script>
-</body>
+  </body>
 </html>

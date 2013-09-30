@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="grid-100">
+	<h1>{{page.title}}{%if page.subtitle %}: {{page.subtitle}}{%endif%}</h1>
+	<p><a href="/">&larr; Kembali ke depan</a> {% if page.parentpage %} | <a href="{{page.parentpage}}">kembali ke {{page.title}}</a> {% endif %}</p>
+	{{content}}
+</div>
