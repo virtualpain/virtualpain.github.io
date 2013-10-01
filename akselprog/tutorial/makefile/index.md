@@ -41,7 +41,7 @@ Contoh Makefile diatas adalah: otomatisasi pekerjaan untuk: menghapus file execu
 
 `make namainstruksi` : bisa digunakan jika kita ingin langsung mengeksekusi instruksi tertentu, misalnya saya ingin mengeksekusi instruksi `install` dari contoh diatas. Maka saya tinggal menuliskan perintah: `make install`.
 
-### Detail Sintaks
+### Detail Format Penulisan
 
 `default: hello.o compile` : Instruksi `default` adalah instruksi yang selalu didahulukan oleh program `make`. Dalam contoh diatas, instruksi `default` tidak mempunyai perintah command line apapun dibawahnya, sebaliknya, ada 2 nama instruksi lain setelah tanda `:`. Dua instruksi inilah yang akan dijalankan oleh `make` saat mengeksekusi instruksi `default`.
 
