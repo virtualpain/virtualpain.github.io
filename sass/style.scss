@@ -47,3 +47,9 @@ footer, .site-title {
 footer {
 	font-size: 0.8em;
 }
+.highlight {
+	pre {
+		padding:20px 10%;
+		color:darken(red,10%);
+	}
+}

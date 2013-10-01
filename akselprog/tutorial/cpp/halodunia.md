@@ -17,7 +17,9 @@ int main()
 }
 {% endhighlight %}
 
-Untuk mengkompilenya, di linux dan mingw (saya tidak tahu di Mac, tapi saya rasa sama saja) anda perlu menuliskan perintah berikut di command line: `g++ main.cpp -o helloworld`. Setelah perintah dieksekusi, sebuah file *executable* baru bernama `helloworld` akan memunculkan tulisan `Hallo Dunia!`.  Pada command line akan terlihat kurang lebih seperti ini:
+## Mengkompilasi kode sumber
+
+Untuk mengkompilasi kode diatas, anda perlu menuliskan perintah berikut di command line: `g++ main.cpp -o helloworld`. Setelah perintah dieksekusi, sebuah file *executable* baru bernama `helloworld` akan memunculkan tulisan `Hallo Dunia!`.  Pada command line akan terlihat kurang lebih seperti ini:
 
 {% highlight text %}
 $ g++ main.cpp -o helloworld
@@ -25,6 +27,8 @@ $ ./helloworld
 Hallo Dunia!
 $
 {% endhighlight %}
+
+## Detail
 
 `#include <iostream>`: C++ mempunyai beberapa standard library yang bisa kita "import" ke dalam kode. Dalam kode diatas, `iostream` adalah standard library yang dibutuhkan untuk stream input-output. Karena `iostream` adalah bagian dari standard library-nya C++, maka kita harus menambahkan `<` dan `>` diantara keduanya. Tapi jika kita meng-"import" kode kita sendiri, gunakan tanda petik ganda `"`. Misal `#include "planet.h"`.
 
