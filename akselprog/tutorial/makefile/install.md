@@ -1,10 +1,9 @@
 ---
 layout: page
-title: "Tutorial: Cara Menginstall Makefile"
+title: "Tutorial Make"
+subtitle: "Menginstall Make"
+parentpage: "index.html"
 ---
-
-[Tutorial Makefile](/tutorial/makefile/)
-
 ## Linux
 
 Untuk menginstall makefile di Linux caranya cukup mudah, `sudo apt-get install build-essential` di Ubuntu, perintah ini akan mendownload compiler, debugger, dan berbagai macam program untuk membuat dan mengkompilasi sebuah program, termasuk di dalamnya Makefile.

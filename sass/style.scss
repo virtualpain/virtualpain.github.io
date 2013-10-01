@@ -13,6 +13,17 @@ body {
 h1,h2,h3 {
 	color:$headerColor;
 }
+h1 {
+	&.site-title {
+		a {
+			color:$headerColor;
+			&:hover {
+				color:$headerColor;
+				background-color:white;
+			}
+		}
+	}
+}
 a {
 	&,&:hover,&:visited,&:active,&:focus {
 		color:$linkColor;
@@ -32,10 +43,13 @@ a {
 }
 
 pre,code {
-	background-color: lightgray;
+	background-color: #ddd;
 	color:black;
 	padding:1px 4px;
 	font-size: 0.9em;
+}
+code {
+	color:darken(red,20%);
 }
 
 .text-center {
@@ -51,5 +65,34 @@ footer {
 	pre {
 		padding:20px 10%;
 		color:darken(red,10%);
+	}
+	code {
+		color:black;
+	}
+}
+
+ul.nostyle {
+	margin:0;
+	padding:0;
+	li {
+		margin:0;
+		padding:0;
+		list-style: none;
+		border:1px solid $linkColor;
+		border-bottom:none;
+		&:last-child {
+			border-bottom: 1px solid $linkColor;
+		}
+		a {
+			display:block;
+			padding:3px 5px;
+		}
+	}
+}
+
+.posts {
+	.post-meta {
+		font-size:0.9em;
+		color:#888;
 	}
 }

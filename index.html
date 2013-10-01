@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<h1 class="site-title">Virtualpain</h1>
 <div class="grid-50">
 	<p>
 		<nav class="tutorials inline-nav"><strong>Akselerasi Programming</strong>:
@@ -11,7 +10,18 @@ layout: default
 	</p>
 </div>
 <div class="grid-50">
-	<h2>Berita</h2>
+	<h2>Blog</h2>
+	<ul class="nostyle posts">
+		{% if site.categories.blog.size > 0 %}
+			{% for post in site.categories.blog limit:5%}
+				<li><a href="{{post.url}}">{{post.title}}{%if post.subtitle %}:{{post.subtitle}}{%endif%}</a></li>
+			{% endfor %}
+
+		{% else %}
+			<p>Belum ada post disini!</p>
+		{% endif %}
+	</ul>
+	<p><a href="/archive.html">Arsip Blog</a></p>
 </div>
 <hr class="clear">
 
