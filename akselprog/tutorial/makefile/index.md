@@ -10,4 +10,4 @@ Sebelum mengetahui tentang Makefile, anda paling tidak harus paham tentang dasar
 
 1. [Install?](/akselprog/tutorial/makefile/install.html)
 2. [Dasar-dasarnya](/akselprog/tutorial/makefile/dasar.html)
-3. [Menggunakan Variabel/Konstanta](/akselprog/tutorial/makefile/variabel.html)
+3. Menggunakan Variabel/Konstanta

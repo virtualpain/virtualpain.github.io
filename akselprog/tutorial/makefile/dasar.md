@@ -39,10 +39,16 @@ Contoh Makefile diatas adalah: otomatisasi pekerjaan untuk: menghapus file execu
 
 ### Detail Format Penulisan
 
-`default: hello.o compile` : *target* `default` adalah *target* yang selalu didahulukan oleh program `make`. Dalam contoh diatas, *target* `default` tidak mempunyai perintah command line apapun dibawahnya, sebaliknya, ada 2 nama *target* lain setelah tanda `:`. Dua *target* ini dinamakan *prequisites* atau persyaratan *target* yang akan dijalankan oleh `make` saat mengeksekusi *target* `default`.
+{% highlight makefile %}
+target: target2 syarat2
+    resep1
+    resep2
+    ...
+target2: syarat
+    resep
+    ...
+{% endhighlight %}
 
-Pada *target* `clean`, tidak ada parameter *target* lain, maka `make` akan langsung mengeksekusi perintah command-line-nya. Ingat, perintah command line selalu didahului dengan sebuah tab atau spasi jarak.
+*Target* adalah sebuah instruksi berisi kumpulan perintah command-line. Sedangkan *syarat* adalah persyaratan, program make akan mendahulukan *syarat* ini terlebih dahulu baru kemudian menjalankan *resep*.
 
-Oh lihat, `hello.o` mempunyai parameter *target* (`clean`) dan perintah command line. `make` akan mengeksekusi *target* `clean` lebih dahulu, baru kemudian perintah command-line dibawahnya.
-
-Gampang kan?
+*Target* biasanya adalah nama file yang akan dihasilkan oleh *resep* atau nama *Phoney Target* misalkan `clean` atau `default`, keduanya bukan nama file yang benar-benar ada, tapi merupakan sebuah nama instruksi.
