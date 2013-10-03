@@ -9,14 +9,10 @@ title: Tutorial Ruby
 
 1. [Install](/akselprog/tutorial/ruby/install.html)
 2. [Ohayou Ruby!](/akselprog/tutorial/ruby/helloworld.html)
-3. [Operator](operator.html)
+3. [Operator dan Tipe Data](operatortipe.html)
 4. [Aduh, Array!](array.html)
 4. [Roop de Roop](loopdeloop.html)
 5. [Jika Benar Maka Lakukan](kondisional.html)
 6. [There is gem for that!](gem.html)
 7. [Class dan Module](classmodule.html)
 
-Terjemahan dari Dokumentasi Core dan Std Lib Ruby versi 2.0.0 dalam bahasa Indonesia.
-
-* [Core 2.0.0](/akselprog/api/ruby/core-2.0.0/)
-* Std Lib 2.0.0

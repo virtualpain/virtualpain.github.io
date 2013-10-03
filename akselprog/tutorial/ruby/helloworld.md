@@ -7,9 +7,12 @@ layout: page
 
 Ohayougozaimas (おはようございます) artinya Selamat Pagi dalam bahasa Jepang.
 
-Anda tidak perlu mengkompile program Ruby, karena Ruby bersifat interpreted. Anda tinggal buat file baru dengan ekstensi `.rb`. Lalu ketik ulang skrip dibawah ini:
+Program Ruby tidak perlu dikompilasi, karena Ruby bersifat interpreted. Artinya kode ruby akan di compile *on the fly* dan langsung ditampilkan.
+
+Contoh program ruby:
 
 {% highlight ruby %}
+# hello world
 puts "Ohayou, Ruby!"
 print "Siapa nama anda? "
 name = gets.chomp
@@ -38,7 +41,9 @@ false
 
 Dalam contoh diatas, saya mengisi input dengan `Alvina`, silakan isi input itu sesuai keinginan anda.
 
-`puts "Ohayou, Ruby" ` akan mem-print `Ohayou, Ruby` ditambah dengan tanda akhir baris pada standard output (STDOUT).
+`# hello world` adalah komentar. Di Ruby, komentar cukup diawali dengan tanda `#` dan berlaku hingga akhir baris. 
+
+`puts "Ohayou, Ruby" ` akan mem-print `Ohayou, Ruby` ditambah dengan tanda akhir baris pada standard output (STDOUT). *Ohayou* dari *Ohayougozaimasu* artinya "Selamat Pagi" dalam bahasa Jepang.
 
 `print "Siapa nama anda"` juga mem-print sebuah string ke standard output, tapi tanpa tanda akhir baris.
 
