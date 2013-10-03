@@ -11,7 +11,7 @@
   <body>
     <div class="grid-container">
       <header>
-        <h1 class="site-title"><a href="/">Virtualpain</a></h1>
+        <h1 class="site-title">{{page.title}}{%if page.subtitle %}: {{page.subtitle}}{%endif%}</h1>
       </header>
       {{content}}
       <footer>
