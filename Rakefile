@@ -47,3 +47,8 @@ task :serve do
 	sh "jekyll serve --watch"
 end
 
+desc "Setup everything"
+task :setup do
+	sh "bower install foundation jquery modernizr"
+	sh "compass compile"
+end

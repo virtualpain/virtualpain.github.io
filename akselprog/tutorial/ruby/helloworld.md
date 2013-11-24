@@ -53,6 +53,6 @@ Di Ruby, semua adalah objek, mulai dari variable, tipe objek, fungsi ato metode,
 
 Bentuk `x.y` akan sangat umum dijumpai dalam Ruby, dimana `x` adalah objek dan `y` adalah metode dari objek. Contoh `name.reverse`, angka `name` adalah objek dari `String`. `name.reverse` sendiri akan menghasilkan kebalikan string dari variable `name`. Kalo misal name itu nilainya "Alvina", maka `name.reverse` menghasilkan nilai berupa string: `anivlA`.
 
-Oh iya, metode di Ruby tidak hanya ASCII aja, bahkan tanda `?`,`!`,`=`,`+`,dll bisa digunakan loh. Contohnya lihat `11.even?`. `.even?` adalah metode dari Integer untuk mengecek apakah objek merupakan bilangan genap, jika benar akan menghasilkan `true`.
+Oh iya, metode di Ruby tidak hanya karakter digit dan angka saja, bahkan tanda `?`,`!`,`=`,`+`,dll bisa digunakan loh. Contohnya lihat `11.even?`. `.even?` adalah metode dari Integer untuk mengecek apakah objek merupakan bilangan genap, jika benar akan menghasilkan `true`.
 
 `"Hallo, #{nama}"` : Kita dapat memasukkan variable atau bahkan sebuah fungsi ato lambda ke dalam string dengan cara mengkapsulasinya dengan `#{` dan `}`.

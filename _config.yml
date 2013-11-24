@@ -1,4 +1,4 @@
 name: Akselerasi Pemprograman
-exclude: ["sass",'Rakefile',"config.rb","_scripts"]
+exclude: ["sass",'Rakefile',"config.rb","_scripts","bower_components"]
 pygments: true
 permalink: ":categories/:year/:title"
