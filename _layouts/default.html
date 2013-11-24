@@ -6,23 +6,28 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div class="grid-container">
-      <header>
-        <h1 class="site-title">{{page.title}}{%if page.subtitle %}: {{page.subtitle}}{%endif%}</h1>
+    <div class="row">
+    <!-- TOP BAR -->
+      {% include topbar.html %}
+    <!-- TOP BAR END -->
+
+      <header class="large-12 columns">
+        <h1 class="site-title">{{page.title}}</h1>
+        {%if page.subtitle %}<h3>{{page.subtitle}}</h3>{%endif%}
       </header>
       {{content}}
-      <footer>
+      <footer class="large-12 columns">
         <p>
           &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://twitter.com/alvinaputri">@virtualpain</a>
         </p>
         <p><img src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" alt="Attribution-NonCommercial-ShareAlike 3.0 Unported"></p>
       </footer>
     </div>
-    <script src="bower_components/jquery/jquery.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/bower_components/jquery/jquery.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
     <script>$(document).foundation();</script>
   </body>
 </html>
