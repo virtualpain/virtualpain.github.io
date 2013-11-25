@@ -51,4 +51,4 @@ target2: syarat
 
 *Target* adalah sebuah instruksi berisi kumpulan perintah command-line. Sedangkan *syarat* adalah persyaratan, program make akan mendahulukan *syarat* ini terlebih dahulu baru kemudian menjalankan *resep*.
 
-*Target* biasanya adalah nama file yang akan dihasilkan oleh *resep* atau nama *Phoney Target* misalkan `clean` atau `default`, keduanya bukan nama file yang benar-benar ada, tapi merupakan sebuah nama instruksi.
+*Target* biasanya adalah nama file yang akan dihasilkan oleh *resep* atau nama *Phoney Target*, contoh dari skrip diatas adalah target `clean` dan `default`, keduanya target tersebut tidak menghasilkan sebuah file bernama `clean` atau `default`. Keduanya cuma sekedar "nama" dari tugas yang akan dikerjakan.
